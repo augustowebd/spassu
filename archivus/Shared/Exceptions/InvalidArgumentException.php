@@ -1,0 +1,29 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Archivus\Shared\Exceptions;
+
+use Exception;
+use DomainException;
+use Archivus\Shared\Exceptions\Traits\HasThrowsIf;
+
+/**
+ * @codeCoverageIgnore
+ */
+class InvalidArgumentException extends DomainException
+{
+    use HasThrowsIf;
+
+    protected $message = '%s_INVALID';
+
+    /**
+     * @throws Exception
+     */
+    public function __construct(string $message)
+    {
+        throw empty($message)
+            ? parent::__construct(code: 422)
+            : parent::__construct(message: sprintf($this->message, $message), code: 422);
+    }
+}

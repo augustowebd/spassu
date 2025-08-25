@@ -1,0 +1,37 @@
+@import 'bootstrap/scss/bootstrap';
+
+html {
+  font-size: 16px; /* tamanho base */
+}
+
+/* tamanhos base */
+.font-small {
+  font-size: 0.85rem;
+}
+
+.font-medium {
+  font-size: 1rem;
+}
+
+.font-large {
+  font-size: 1.25rem;
+}
+
+.font-xlarge {
+  font-size: 1.5rem;
+}
+
+/* garantir que os componentes herdem */
+.font-small,
+.font-medium,
+.font-large,
+.font-xlarge {
+  /* herança para tabelas e inputs */
+  table, th, td,
+  .form-control,
+  .btn,
+  .modal,
+  .pagination {
+    font-size: inherit !important;
+  }
+}

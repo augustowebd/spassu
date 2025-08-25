@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="90f020e5-c3a0-4e9f-a156-174467861814" name="Changes" comment="Entrega do desafio spassu">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Author.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Create/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Create/UseCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Remove/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Remove/UseCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/RepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Shared/Exceptions/AuthorCreateException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Shared/Exceptions/AuthorExistsException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Shared/Exceptions/AuthorNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Shared/Exceptions/AuthorRemoveException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Shared/Exceptions/AuthorSaveException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Shared/Exceptions/CannotDeleteAuthorWithBooksException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Shared/Factory/AuthorFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Shared/ValueObject/Name.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Update/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/Update/UseCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/UpdateCatalog/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Author/UpdateCatalog/UseCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Book/Book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Book/Create/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Book/Create/UseCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Book/Remove/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Book/Remove/UseCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Book/RepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Book/Shared/Exceptions/BookRemoveException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Book/Shared/ValueObject/Edition.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Book/Shared/ValueObject/PublicationYear.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Book/Shared/ValueObject/Publisher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Book/Shared/ValueObject/Title.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Book/Update/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Book/Update/UseCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/Create/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/Create/UseCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/Remove/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/Remove/UseCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/RepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/Shared/Exceptions/CannotDeleteAuthorWithBooksException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/Shared/Exceptions/SubjectCreateException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/Shared/Exceptions/SubjectExistsException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/Shared/Exceptions/SubjectRemoveException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/Shared/Exceptions/SubjectSaveException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/Shared/Factory/SubjectFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/Shared/ValueObject/Description.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/Subject.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/Update/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Domain/Subject/Update/UseCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Infrastructure/LaravelBind/ArchivusAppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Shared/Collections/Books.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Shared/Exceptions/InvalidArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Shared/Exceptions/InvalidStringArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Shared/Exceptions/RecordAlreadyExistsException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Shared/Exceptions/Traits/HasThrowsIf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Shared/Exceptions/UnitOfWorkFailException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Shared/Exceptions/ValidationException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Shared/Text.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Shared/UnitOfWorkInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Shared/ValueObjects/Str.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivus/Shared/ValueObjects/Stringable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/default.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/php/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/00-testes-unitarios.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/1.0-tela-principal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/1.1-livro-cadastro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/1.2-livro-edicao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/1.3-livro-excluao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/2.0-autor-listagem.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/2.1-autor-edicao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/2.2-autor-exclusao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/3.1-assunto-listagem.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/3.2-assunto-cadastro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/3.3-assunto-edicao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/3.4-assunto-exclusao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/4.1-relatorio-listamge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/4.2-relatorio-pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/4.3.0-relatorio-csv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/4.3.1-relatorio-csv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Helpers/CurrencyHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Author/AuthorComboController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Author/AuthorCreateController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Author/AuthorDetailController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Author/AuthorListController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Author/AuthorRemoveController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Author/AuthorUpdateController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Book/BookCreateController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Book/BookDetailController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Book/BookListController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Book/BookRemoveController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Book/BookUpdateController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Subject/SubjectComboController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Subject/SubjectCreateController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Subject/SubjectDetailController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Subject/SubjectListController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Subject/SubjectRemoveController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Subject/SubjectUpdateController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/reports/ReportController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/reports/ReportCsvController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/reports/ReportPdfController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Requests/AuthorRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Requests/BookRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Requests/SubjectRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Infrastructure/Mappers/AuthorMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Infrastructure/Mappers/BookMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Infrastructure/Mappers/SubjectMapper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Infrastructure/Persistence/AuthorEloquentRepositoryImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Infrastructure/Persistence/BookEloquentRepositoryImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Infrastructure/Persistence/SubjectEloquentRepositoryImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Infrastructure/Persistence/UnitOfWorkImpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Models/Assunto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Models/Autor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Models/Livro.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Models/VwLivroAssunto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Models/VwLivroAutor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/bootstrap/providers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/config/sanctum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/factories/AssuntoFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/factories/AutorFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/factories/LivroFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/migrations/0001_01_01_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/migrations/0001_01_01_000001_create_cache_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/migrations/0001_01_01_000002_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/migrations/2025_08_19_204412_create_assuntos_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/migrations/2025_08_19_204412_create_autores_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/migrations/2025_08_19_204412_create_livros_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/migrations/2025_08_19_205222_create_livro_autor_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/migrations/2025_08_19_205244_create_livro_assunto_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/migrations/2025_08_22_010609_create_personal_access_tokens_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/migrations/2025_08_23_232458_vw_livros_por_autor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/js/authors/create.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/js/authors/grid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/js/books/create.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/js/books/grid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/js/font-size.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/js/showToast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/js/subjects/create.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/js/subjects/grid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/js/switch-theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/sass/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/author/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/author/grid.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/book/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/book/grid.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/reports/author-pdf.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/reports/author.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/reports/subject.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/subject/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/subject/grid.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/setup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/storage/app/private/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Author/AuthorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Author/Create/CreateRequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Author/Create/CreateUseCaseTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Author/Remove/RemoveRequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Author/Remove/RemoveUseCaseTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Author/Shared/Factory/AuthorFactoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Author/Shared/ValueObject/NameTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Author/Update/UpdateRequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Author/Update/UpdateUseCaseTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Author/UpdateCatalog/UpdateCatalogRequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Author/UpdateCatalog/UpdateCatalogUseCaseTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Book/BookTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Book/Create/BookCreateRequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Book/Create/BookCreateUseCaseTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Book/Remove/RequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Book/Remove/UseCaseTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Book/Shared/ValueObject/EditionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Book/Shared/ValueObject/PublicationYearTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Book/Shared/ValueObject/PublisherTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Book/Update/UpdateBookRequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Book/Update/UpdateBookUseCaseTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Subject/Create/CreateSubjectRequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Subject/Create/CreateSubjectUseCaseTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Subject/Remove/RemoveSubjectRequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Subject/Remove/RemoveSubjectUseCaseTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Subject/Shared/Factory/SubjectFactoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Subject/Shared/ValueObjects/DescriptionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Subject/Update/UpdateSubjectRequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Subject/Update/UpdateSubjectUseCaseTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Shared/Collections/BooksTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Shared/Exceptions/Traits/HasThrowsIf/HasThrowsIfTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Shared/ValueObjects/StrTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/vite.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/laravel/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="PHP File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "augustowebd"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/augustowebd/spassu.git",
+    "accountId": "a6e3358e-ce4d-4bad-9688-2c38428efbd9"
+  }
+}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/laravel/.env" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="127.0.0.1" id="832cd10c-4203-4e67-aac8-147855b05cfb" name="127.0.0.1" port="8000" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
+    <include_path>
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/laravel/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/laravel/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/laravel/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/laravel/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/laravel/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/laravel/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/laravel/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/laravel/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/laravel/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/laravel/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/laravel/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/laravel/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/laravel/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/laravel/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/laravel/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/laravel/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/laravel/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/laravel/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/laravel/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/laravel/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/laravel/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/laravel/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/laravel/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/laravel/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/laravel/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/laravel/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/laravel/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/laravel/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/laravel/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/laravel/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/laravel/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/laravel/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/laravel/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/laravel/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/laravel/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/laravel/vendor/league/config" />
+      <path value="$PROJECT_DIR$/laravel/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/laravel/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/laravel/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/laravel/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/laravel/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/laravel/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/laravel/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/laravel/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/laravel/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/laravel/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/polyfill-php84" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/polyfill-php85" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/laravel/vendor/composer" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/laravel/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/laravel/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/laravel/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/laravel/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/laravel/vendor/dompdf/php-font-lib" />
+      <path value="$PROJECT_DIR$/laravel/vendor/dompdf/php-svg-lib" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/laravel/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/laravel/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/laravel/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/laravel/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/laravel/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/laravel/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/laravel/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/laravel/vendor/laravel/pail" />
+      <path value="$PROJECT_DIR$/laravel/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/laravel/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/laravel/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/laravel/vendor/nunomaduro/collision" />
+    </include_path>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="31WI1Nxh3lGRRAfdSJmmAHlXvHM" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "PHPUnit.AuthorFactoryTest.executor": "Run",
+    "PHPUnit.AuthorFactoryTest.testCreateReturnsNewAuthor.executor": "Run",
+    "PHPUnit.AuthorTest.executor": "Run",
+    "PHPUnit.AuthorTest.test_it_adds_new_books.executor": "Run",
+    "PHPUnit.AuthorTest.test_it_keeps_existing_books_if_present_in_new_collection.executor": "Run",
+    "PHPUnit.AuthorTest.test_it_removes_books_not_in_new_collection.executor": "Run",
+    "PHPUnit.BookCreateRequestTest.executor": "Run",
+    "PHPUnit.BookCreateUseCaseTest.executor": "Run",
+    "PHPUnit.BookCreateUseCaseTest.testExecuteCreatesBookWithRegisteredAuthorsAndSubjects.executor": "Run",
+    "PHPUnit.BookCreateUseCaseTest.testOnlyRegisteredSubjectsReturnsSubjects.executor": "Run",
+    "PHPUnit.BookTest.executor": "Run",
+    "PHPUnit.BookTest.testAddAuthorAddsAuthorToAuthorsArray.executor": "Run",
+    "PHPUnit.BookTest.testAddMultipleAuthorsAndSubjects.executor": "Run",
+    "PHPUnit.BookTest.testAddSubjectAddsSubjectToSubjectsArray.executor": "Run",
+    "PHPUnit.BookTest.testConstructorSetsPropertiesCorrectly.executor": "Run",
+    "PHPUnit.BooksTest.executor": "Run",
+    "PHPUnit.BooksTest.testRemoveBook.executor": "Run",
+    "PHPUnit.CreateRequestTest.executor": "Run",
+    "PHPUnit.CreateSubjectRequestTest (1).executor": "Run",
+    "PHPUnit.CreateSubjectRequestTest (2).executor": "Run",
+    "PHPUnit.CreateSubjectRequestTest.executor": "Run",
+    "PHPUnit.CreateSubjectRequestTest.testCanBeInstantiatedFromArray (1).executor": "Run",
+    "PHPUnit.CreateSubjectRequestTest.testCanBeInstantiatedFromArray.executor": "Run",
+    "PHPUnit.CreateSubjectRequestTest.testCanBeInstantiatedWithConstructor.executor": "Run",
+    "PHPUnit.CreateSubjectRequestTest.testFromArrayThrowsExceptionWhenDescriptionMissing.executor": "Run",
+    "PHPUnit.CreateSubjectUseCaseTest.executor": "Run",
+    "PHPUnit.CreateUseCaseTest.executor": "Run",
+    "PHPUnit.DescriptionTest (1).executor": "Run",
+    "PHPUnit.DescriptionTest.executor": "Run",
+    "PHPUnit.DescriptionTest.testCanBeCreatedWithValidString.executor": "Run",
+    "PHPUnit.DescriptionTest.testFromAndIfNotEmpty.executor": "Run",
+    "PHPUnit.DescriptionTest.testToString.executor": "Run",
+    "PHPUnit.EditionTest.executor": "Run",
+    "PHPUnit.HasThrowsIfTest.executor": "Run",
+    "PHPUnit.HasThrowsIfTest.testThrowsIfThrowsWhenTrue.executor": "Run",
+    "PHPUnit.HasThrowsIfTest.testThrowsIfUsesDefaultMessageAndCode.executor": "Run",
+    "PHPUnit.InvalidArgumentExceptionTest (1).executor": "Run",
+    "PHPUnit.InvalidArgumentExceptionTest.executor": "Run",
+    "PHPUnit.InvalidArgumentExceptionTest.testItUsesDefaultCodeWhenMessageIsEmpty.executor": "Run",
+    "PHPUnit.NameTest.executor": "Run",
+    "PHPUnit.NameTest.testThrowsExceptionWhenTooLong.executor": "Run",
+    "PHPUnit.NameTest.testThrowsExceptionWhenTooShort.executor": "Run",
+    "PHPUnit.NameTest.testTruncatesStringExceedingMaxLength.executor": "Run",
+    "PHPUnit.PublicationYearTest.executor": "Run",
+    "PHPUnit.PublisherTest.executor": "Run",
+    "PHPUnit.RemoveRequestTest.executor": "Run",
+    "PHPUnit.RemoveSubjectRequestTest.executor": "Run",
+    "PHPUnit.RemoveSubjectUseCaseTest.executor": "Run",
+    "PHPUnit.RemoveUseCaseTest.executor": "Run",
+    "PHPUnit.RemoveUseCaseTest.testExecuteThrowsAuthorRemoveExceptionWhenRemoveFails.executor": "Run",
+    "PHPUnit.RequestTest (1).executor": "Run",
+    "PHPUnit.RequestTest.executor": "Run",
+    "PHPUnit.RequestTest.testCanBeInstantiatedFromArray.executor": "Run",
+    "PHPUnit.RequestTest.testCanBeInstantiatedWithConstructor.executor": "Run",
+    "PHPUnit.RequestTest.testFromArrayThrowsErrorWhenNameIsMissing.executor": "Run",
+    "PHPUnit.RequestTest.testFromArrayThrowsExceptionWhenNameIsMissing.executor": "Run",
+    "PHPUnit.StrTest.executor": "Run",
+    "PHPUnit.StrTest.testCreateStringIfValueIsNotEmpty.executor": "Run",
+    "PHPUnit.StrTest.testFromWithoutTruncate.executor": "Run",
+    "PHPUnit.StrTest.testIsEmptyMethod.executor": "Run",
+    "PHPUnit.StrTest.testToStringTruncated.executor": "Run",
+    "PHPUnit.SubjectFactoryTest.executor": "Run",
+    "PHPUnit.Unit.executor": "Run",
+    "PHPUnit.UpdateBookRequestTest.executor": "Run",
+    "PHPUnit.UpdateBookRequestTest.testCanBeInstantiatedFromArray.executor": "Run",
+    "PHPUnit.UpdateBookRequestTest.testDefaultsToEmptyArrays.executor": "Run",
+    "PHPUnit.UpdateBookUseCaseTest.executor": "Run",
+    "PHPUnit.UpdateCatalogRequestTest.executor": "Run",
+    "PHPUnit.UpdateCatalogUseCaseTest.executor": "Run",
+    "PHPUnit.UpdateRequestTest.executor": "Run",
+    "PHPUnit.UpdateRequestTest.testCanBeInstantiatedFromArray.executor": "Run",
+    "PHPUnit.UpdateRequestTest.testCanBeInstantiatedWithConstructor.executor": "Run",
+    "PHPUnit.UpdateRequestTest.testFromArrayThrowsExceptionWhenDataIsMissing.executor": "Run",
+    "PHPUnit.UpdateSubjectRequestTest.executor": "Run",
+    "PHPUnit.UpdateSubjectUseCaseTest.executor": "Run",
+    "PHPUnit.UpdateUseCaseTest.executor": "Run",
+    "PHPUnit.UpdateUseCaseTest.testExecuteReturnsNullWhenAuthorNotFound.executor": "Run",
+    "PHPUnit.UpdateUseCaseTest.testExecuteThrowsAuthorNotFoundExceptionWhenAuthorDoesNotExist.executor": "Run",
+    "PHPUnit.UpdateUseCaseTest.testExecuteThrowsAuthorSaveExceptionWhenSaveFails.executor": "Run",
+    "PHPUnit.UpdateUseCaseTest.testExecuteUpdatesAuthorSuccessfully.executor": "Run",
+    "PHPUnit.UseCaseTest (1).executor": "Run",
+    "PHPUnit.UseCaseTest (2).executor": "Run",
+    "PHPUnit.UseCaseTest.executor": "Run",
+    "PHPUnit.UseCaseTest.testExecuteRemovesAuthorWhenNoBooks.executor": "Run",
+    "PHPUnit.UseCaseTest.testExecuteRemovesBookSuccessfully.executor": "Run",
+    "PHPUnit.UseCaseTest.testExecuteReturnsAuthorWhenSuccessful.executor": "Run",
+    "PHPUnit.UseCaseTest.testExecuteReturnsNullWhenAuthorNotFound.executor": "Run",
+    "PHPUnit.UseCaseTest.testExecuteReturnsNullWhenBookNotFound.executor": "Run",
+    "PHPUnit.UseCaseTest.testExecuteThrowsAuthorExistsExceptionWhenAlreadyExists.executor": "Run",
+    "PHPUnit.UseCaseTest.testExecuteThrowsAuthorRemoveExceptionWhenRemoveFails.executor": "Run",
+    "PHPUnit.UseCaseTest.testExecuteThrowsAuthorSaveExceptionWhenSaveFails.executor": "Run",
+    "PHPUnit.UseCaseTest.testExecuteThrowsBookRemoveExceptionOnFailure.executor": "Run",
+    "PHPUnit.UseCaseTest.testExecuteThrowsExceptionWhenAuthorHasBooks.executor": "Run",
+    "PHPUnit.tests.executor": "Coverage",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "SHELLCHECK.PATH": "I do mind",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/deposito",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "NONE",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/snap/phpstorm/525/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite",
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/laravel" />
+      <recent name="$PROJECT_DIR$/laravel/resources/views/reports" />
+      <recent name="$PROJECT_DIR$/archivus/Domain/Subject" />
+      <recent name="$PROJECT_DIR$/archivus/Domain/Subject/Shared" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/laravel/tests/Unit" />
+      <recent name="$PROJECT_DIR$/laravel/resources/js/books" />
+      <recent name="$PROJECT_DIR$/laravel/resources/views/books" />
+      <recent name="$PROJECT_DIR$/archivus/Domain/Author/Remove" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.tests">
+    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/laravel/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PublisherTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="PublisherTest" configuration_file="$PROJECT_DIR$/laravel/phpunit.xml" file="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Book/Shared/ValueObject/PublisherTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SubjectFactoryTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="SubjectFactoryTest" configuration_file="$PROJECT_DIR$/laravel/phpunit.xml" file="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Subject/Shared/Factory/SubjectFactoryTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UpdateSubjectRequestTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="UpdateSubjectRequestTest" configuration_file="$PROJECT_DIR$/laravel/phpunit.xml" file="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Subject/Update/UpdateSubjectRequestTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UpdateSubjectUseCaseTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="UpdateSubjectUseCaseTest" configuration_file="$PROJECT_DIR$/laravel/phpunit.xml" file="$PROJECT_DIR$/laravel/tests/Unit/Archivus/Domain/Subject/Update/UpdateSubjectUseCaseTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner configuration_file="$PROJECT_DIR$/laravel/phpunit.xml" directory="$PROJECT_DIR$/laravel/tests" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.tests" />
+        <item itemvalue="PHPUnit.UpdateSubjectUseCaseTest" />
+        <item itemvalue="PHPUnit.UpdateSubjectRequestTest" />
+        <item itemvalue="PHPUnit.SubjectFactoryTest" />
+        <item itemvalue="PHPUnit.PublisherTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PS-252.23892.419" />
+        <option value="bundled-php-predefined-a98d8de5180a-c72577f2c82f-com.jetbrains.php.sharedIndexes-PS-252.23892.419" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90f020e5-c3a0-4e9f-a156-174467861814" name="Changes" comment="" />
+      <created>1755633185921</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755633185921</updated>
+      <workItem from="1755633187013" duration="989000" />
+      <workItem from="1755634201649" duration="5000" />
+      <workItem from="1755634214980" duration="14000" />
+      <workItem from="1755634240379" duration="19000" />
+      <workItem from="1755634269345" duration="98962000" />
+      <workItem from="1755907536810" duration="562000" />
+      <workItem from="1755908209912" duration="13610000" />
+      <workItem from="1755952617737" duration="3650000" />
+      <workItem from="1755956986624" duration="4173000" />
+      <workItem from="1755961198207" duration="60020000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="default.conf" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Entrega do desafio spassu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Entrega do desafio spassu" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/archivus/Domain/Author/UpdateCatalog/UseCase.php</url>
+          <line>17</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/laravel/app/Infrastructure/Persistence/BookEloquentRepositoryImpl.php</url>
+          <line>23</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Book/BookUpdateController.php</url>
+          <line>21</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Author/AuthorUpdateController.php</url>
+          <line>23</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Author/AuthorCreateController.php</url>
+          <line>20</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/archivus/Domain/Author/Create/UseCase.php</url>
+          <line>27</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/laravel/app/Infrastructure/Persistence/AuthorEloquentRepositoryImpl.php</url>
+          <line>66</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/archivus/Domain/Subject/Create/UseCase.php</url>
+          <line>24</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/laravel/app/Http/Controllers/Api/Author/AuthorListController.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/laravel/app/Http/Controllers/reports/ReportController.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/laravel/app/Http/Controllers/reports/ReportPdfController.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spassu@tests.xml" NAME="tests Coverage Results" MODIFIED="1756043549926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
